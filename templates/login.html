@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %} Login page {% endblock title %}
+
+{% block content %}
+
+
+
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+
+
+{% if message %}
+  {{ message }}
+
+{% endif %} 
+
+ <form action="/log_in" method="POST">
+ 	{{ form.hidden_tag() }}
+   <p> 
+   	{{ form.user_name.label }}
+ 
+    {{ form.user_name }}
+  </p>
+
+
+  
+
+ <p> 
+      {{ form.password.label }}
+      {{ form.password }}
+  </p> 
+
+
+
+
+  <p> 
+      {{ form.submit.label }}
+      {{ form.submit }}
+  </p> 
+   
+
+
+ </form>
+
+
+<a href="{{ url_for('sign_up') }}"> Sign Up </a>
+ 
+  
+
+{% endblock %}
