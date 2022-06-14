@@ -9,7 +9,7 @@ from flask_migrate import Migrate
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
 # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:2222@localhost:5432/quiz"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://hsvloyqstihcop:d7de50ce813fa0e8c5c35d56e27b99d92a2b50261fdef007c051a9ee77647ed6@ec2-54-157-16-196.compute-1.amazonaws.com:5432/d7iqtmtl8cra5e"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
