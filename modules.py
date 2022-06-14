@@ -1,6 +1,4 @@
-from contextlib import nullcontext
-from turtle import backward
-from xmlrpc.client import FastMarshaller
+
 from quiz import app
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
